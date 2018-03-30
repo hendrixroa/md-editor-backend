@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS md_editor;
-CREATE DATABASE md_editor;
+DROP DATABASE IF EXISTS md_docs;
+CREATE DATABASE md_docs;
 
-use md_editor;
+use md_docs;
 
-CREATE TABLE posts (
+CREATE TABLE documents (
     id integer primary key NOT NULL AUTO_INCREMENT,
     post text,
     create_at timestamp default current_timestamp,

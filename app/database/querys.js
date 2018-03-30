@@ -8,7 +8,7 @@ module.exports.Querys = () => {
           console.log(err)
           reject(err)
         }else{
-          resolve({'results': rows })
+          resolve({'body': rows, status: 200 })
         }		
       })
     })
