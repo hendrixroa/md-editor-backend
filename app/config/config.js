@@ -1,10 +1,7 @@
 module.exports = {
 	BD: {
-		host: process.env.HOSTBD,
-		database: process.env.DATABASE,
-		port: process.env.PORTBD,
-		user: process.env.USERBD,
-		pass: process.env.PASSWORDBD
+		url: process.env.DATABASE_URL,
+		database: process.env.DATABASE
 	},
 	server: {
 		port: 3000,
