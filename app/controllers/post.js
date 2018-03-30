@@ -1,15 +1,18 @@
 module.exports.Post = () => {
   const sh = require('shorthash')
+  const db = require('../database/querys').Querys()
 
-  const createPost = () => {
-    
+  const listPosts = async (req, res) => {
+    const { rows } = await db.query('SELECT * FROM posts;', [])
+    res.send(rows[0])
+  }
+
+  const createPost = async (req, res) => {
+    const rows = await db.query('INSERT INTO md_editor.posts (post) values (?);', [req.body.post])
+    res.json(rows)
   }
 
   const editPost = () => {
-    
-  }
-
-  const updatePost = () => {
     
   }
 
@@ -20,7 +23,6 @@ module.exports.Post = () => {
   return {
     createPost: createPost,
     editPost: editPost,
-    updatePost: updatePost,
     deletePost: deletePost
   }
 }
