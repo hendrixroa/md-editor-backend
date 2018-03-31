@@ -22,7 +22,7 @@ app.route('/auth')
   .post(auth.login)
 
 app.route('/document')
-  .get(document.listDocuments)
+  .get(jwt.verifyToken, document.listDocuments)
   .post(jwt.verifyToken, document.createDocument)
 
 app.route('/document/:id')

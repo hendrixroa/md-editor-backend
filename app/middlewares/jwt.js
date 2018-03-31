@@ -1,10 +1,10 @@
 module.exports.JWT = () => {
 	const jwt = require('jsonwebtoken')
-  const config = require('../config/config')
+  const config = require('../config/config').server
 
 	const verifyToken = (req, res, next) => {
 		const token = req.headers['x-access-token']
-  	if (!token) return res.status(403).send({ auth: false, message: 'El token es requerido' })
+  	if (!token) return res.status(403).send({ auth: false, message: 'Token is required' })
 		try{
 			const isValid = jwt.verify(token, config.secret)
 			if(isValid.id){
