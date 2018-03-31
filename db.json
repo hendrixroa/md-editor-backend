@@ -18,5 +18,14 @@
       "created_at": "Fri Mar 30 2018 19:33:00 GMT-0500 (-05)",
       "updated_at": "Fri Mar 30 2018 22:55:28 GMT-0500 (-05)"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "alias@pay.com",
+      "password": "$2a$08$mLMr..6I3kQhkYM7fvSEBeiLIwtGwUWBlWTXKmB7yeVOrQxdhHV4a",
+      "created_at": "Fri Mar 30 2018 19:33:00 GMT-0500 (-05)",
+      "updated_at": "Fri Mar 30 2018 22:55:28 GMT-0500 (-05)"
+    }
   ]
 }

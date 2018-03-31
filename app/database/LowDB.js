@@ -14,6 +14,11 @@ module.exports.LowDB = () => {
     return items
   }
 
+  const getBy = async (table, obj) => {
+    const items = await db.get(table).find(obj).value()
+    return items
+  }
+
   const create = (table, item) => {
     db.get(table)
       .push(item)
@@ -45,6 +50,7 @@ module.exports.LowDB = () => {
   return {
     create: create,
     get: get,
+    getBy: getBy,
     updateBy: updateBy,
     remove: remove
   }
