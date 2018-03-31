@@ -4,7 +4,7 @@ module.exports = {
 		database: process.env.DATABASE
 	},
 	server: {
-		port: 3000,
+		port: 8000,
 		secret: 'yourSecretValueOntheServer'
 	}
 }
