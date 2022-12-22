@@ -6,7 +6,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "jsonwebtoken": "^8.2.0",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.5",
     "lowdb": "^1.0.0",
     "uuid": "^3.2.1"
